@@ -1,0 +1,32 @@
+.parentContainer {
+    flex-direction: row;
+    width: 124px
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+}
+
+.emailBox {
+    width: 510px;
+    height: 57px;
+    border: none;
+    border-top-left-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.sendEmail{
+    background-color: #3E3E3E;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 136px;
+    height: 57px;
+    border: none;
+}

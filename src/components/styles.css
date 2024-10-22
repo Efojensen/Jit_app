@@ -1,18 +1,21 @@
 .parentContainer {
+    display: flex;
+    align-items: center;
     flex-direction: row;
-    width: 124px
+    width: 124px;
 }
 
 .circle {
-    width: 50px;
-    height: 50px;
-    background-color: #D9D9D9;
+    width: 31px;
+    height: 31px;
+    background-color: #d9d9d9;
+    margin-right: 9px;
     border-radius: 50px;
 }
 
 .emailBox {
-    width: 510px;
-    height: 57px;
+    width: 300px;
+    height: 48px;
     border: none;
     border-top-left-radius: 20px;
     align-items: center;
@@ -21,12 +24,41 @@
     border-bottom-left-radius: 20px;
 }
 
-.sendEmail{
-    background-color: #3E3E3E;
+.sendEmail {
+    background-color: #3e3e3e;
     color: white;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     width: 136px;
-    height: 57px;
+    height: 48px;
     border: none;
+}
+
+.smallRectangle {
+    display: flex;
+    width: 143px;
+    height: 45px;
+    background-color: #d9d9d9;
+}
+
+.roundedRectangle {
+    display: flex;
+    background-color: #d9d9d9;
+    margin-left: 4px;
+}
+
+.border-top-left {
+    border-top-left-radius: 100px;
+}
+
+.border-top-right {
+    border-top-right-radius: 100px;
+}
+
+.border-bottom-left {
+    border-bottom-left-radius: 100px;
+}
+
+.border-bottom-right {
+    border-bottom-right-radius: 100px;
 }

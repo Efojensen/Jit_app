@@ -3,9 +3,13 @@ import EmailBox from './components/emailBox';
 import AppStrings from './constants/appStrings';
 import RoundedRectangle from './components/roundedRectangle';
 import CircleAvatarProfile from './components/circleAvatarProfile';
-import React from 'react';
+// import React from 'react';
 
 function App() {
+  function capFirstLetter(word: string) {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  }
+
   return (
     <div className="App">
       <span className='header'>
@@ -27,11 +31,19 @@ function App() {
         <h4 className='smallText'>{AppStrings.companyDescription}</h4>
         <div className='roundedRectangleRow'>
           <RoundedRectangle width={630} height={473} borderRadiusSide='bottom-right'/>
-          <RoundedRectangle width={432} height={473} borderRadiusSide='bottom-right'/>
+          <RoundedRectangle width={432} height={473} borderRadiusSide='none'/>
         </div>
         <div className='detailsEmployers'>
-          <div>
-            <h6 className='smallText'></h6>
+          <div className='detailedEmployer'>
+            <h6 className='smallText'>{AppStrings.whatWeOffer}</h6>
+            <h5>{AppStrings.howItWorks + ' ' + AppStrings.forEmployers}</h5>
+            <p>{AppStrings.detailsEmployerPt1}</p>
+            <p>{AppStrings.detailsEmployerPt2}</p>
+          </div>
+          <div className='detailedEmployer'>
+            <span>{capFirstLetter(AppStrings.forCandidates)}  {capFirstLetter(AppStrings.forEmployers)}</span>
+            <hr className='horizontalRule'></hr>
+            <RoundedRectangle width={613} height={473} borderRadiusSide='top-right'/>
           </div>
         </div>
       </div>

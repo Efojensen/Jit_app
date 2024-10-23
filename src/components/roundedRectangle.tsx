@@ -4,7 +4,7 @@ import './styles.css';
 interface RoundedRectangleProps {
     width: string | number;
     height: string | number;
-    borderRadiusSide: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';
+    borderRadiusSide: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right' | 'none';
 }
 
 const RoundedRectangle: React.FC<RoundedRectangleProps> = ({ width, height, borderRadiusSide }) => {
